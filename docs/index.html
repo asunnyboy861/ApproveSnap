@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ApproveSnap - Project Approval Workflow Tool</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; background: #f5f5f7; }
+        .hero { background: linear-gradient(135deg, #007AFF 0%, #5856D6 100%); color: white; padding: 60px 20px; text-align: center; }
+        .hero h1 { font-size: 42px; font-weight: 700; margin-bottom: 12px; }
+        .hero p { font-size: 20px; opacity: 0.9; max-width: 600px; margin: 0 auto 24px; }
+        .hero .cta { display: inline-block; background: white; color: #007AFF; padding: 14px 32px; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 18px; transition: transform 0.2s; }
+        .hero .cta:hover { transform: scale(1.05); }
+        .features { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .features h2 { text-align: center; font-size: 28px; margin-bottom: 32px; color: #1a1a1a; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+        .feature-card { background: white; border-radius: 16px; padding: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+        .feature-card h3 { font-size: 18px; font-weight: 600; margin-bottom: 8px; color: #007AFF; }
+        .feature-card p { font-size: 14px; color: #555; }
+        .pricing { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        .pricing h2 { text-align: center; font-size: 28px; margin-bottom: 32px; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+        .pricing-card { background: white; border-radius: 16px; padding: 24px; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+        .pricing-card.free { border: 2px solid #e5e5e7; }
+        .pricing-card.pro { border: 2px solid #007AFF; position: relative; }
+        .pricing-card.pro .badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #007AFF; color: white; padding: 4px 16px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+        .pricing-card h3 { font-size: 20px; margin-bottom: 8px; }
+        .pricing-card .price { font-size: 32px; font-weight: 700; color: #007AFF; margin-bottom: 16px; }
+        .pricing-card .price span { font-size: 14px; font-weight: 400; color: #86868b; }
+        .pricing-card ul { list-style: none; text-align: left; margin-bottom: 16px; }
+        .pricing-card ul li { padding: 6px 0; font-size: 14px; color: #333; border-bottom: 1px solid #f5f5f7; }
+        .footer { text-align: center; padding: 40px 20px; color: #86868b; font-size: 13px; border-top: 1px solid #e5e5e7; }
+        .footer a { color: #007AFF; text-decoration: none; margin: 0 8px; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>ApproveSnap</h1>
+        <p>Get client approvals faster. Replace messy email chains with structured approval workflows, magic links, and full audit trails.</p>
+        <a href="https://apps.apple.com/app/approvesnap" class="cta">Download on the App Store</a>
+    </div>
+
+    <div class="features">
+        <h2>Why ApproveSnap?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>Magic Link Sharing</h3>
+                <p>Send encrypted, time-limited approval links to clients. They approve with one tap - no app install needed.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Deadline Tracking</h3>
+                <p>Set deadlines with automatic reminders at 24h, 12h, and 2h. Never chase approvals again.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Full Audit Trail</h3>
+                <p>Every action is timestamped and logged. Complete compliance documentation at your fingertips.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Approval State Machine</h3>
+                <p>Enforced valid status transitions prevent errors. Pending, approved, rejected, or changes requested.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Project Dashboard</h3>
+                <p>See all your approval projects at a glance. Filter by status, deadline, or client.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Comments & Feedback</h3>
+                <p>Threaded comments on each approval item. Clear communication, zero confusion.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="pricing">
+        <h2>Simple Pricing</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card free">
+                <h3>Free</h3>
+                <div class="price">$0<span>/mo</span></div>
+                <ul>
+                    <li>2 projects per month</li>
+                    <li>Basic approval workflow</li>
+                    <li>7-day audit log</li>
+                    <li>Email notifications</li>
+                </ul>
+            </div>
+            <div class="pricing-card pro">
+                <div class="badge">Most Popular</div>
+                <h3>Pro Monthly</h3>
+                <div class="price">$9.99<span>/mo</span></div>
+                <ul>
+                    <li>Unlimited projects</li>
+                    <li>Magic link sharing</li>
+                    <li>Full audit trail</li>
+                    <li>Deadline reminders</li>
+                    <li>7-day free trial</li>
+                </ul>
+            </div>
+            <div class="pricing-card pro">
+                <h3>Pro Yearly</h3>
+                <div class="price">$99<span>/yr</span></div>
+                <ul>
+                    <li>Everything in Pro</li>
+                    <li>17% savings vs monthly</li>
+                    <li>Priority support</li>
+                </ul>
+            </div>
+            <div class="pricing-card pro">
+                <h3>Lifetime</h3>
+                <div class="price">$199.99<span>once</span></div>
+                <ul>
+                    <li>Everything in Pro</li>
+                    <li>Pay once, use forever</li>
+                    <li>No recurring billing</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>ApproveSnap &copy; 2026. All rights reserved.</p>
+        <p>
+            <a href="support.html">Support</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
+        </p>
+        <p>Contact: <a href="mailto:iocompile67692@gmail.com">iocompile67692@gmail.com</a></p>
+    </div>
+</body>
+</html>
